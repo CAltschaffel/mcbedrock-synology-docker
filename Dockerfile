@@ -5,7 +5,7 @@ FROM ubuntu:18.04 as base
 LABEL project="https://github.com/CAltschaffel/mcbedrock-synology-docker"
 
 # Install dependencies
-RUN apt-get update 
+RUN apt-get update \
 	&& apt-get install -y \
 	--no-install-recommends \
 		gosu \
